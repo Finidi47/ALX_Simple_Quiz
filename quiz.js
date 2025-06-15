@@ -2,10 +2,11 @@ function checkAnswer(){
     const correctAnswer = '4';
     const choices = document.querySelector('input[name="quiz"]:checked');
     const feedback = document.getElementById('feedback');
+    let userAnswer;
 
 
     if(choices !== null){
-        const userAnswer = choices.value;
+        userAnswer = choices.value;
 
             //Compare the User’s Answer with the Correct Answer
 
