@@ -5,22 +5,20 @@ function checkAnswer(){
     let userAnswer;
 
 
-    if(choices !== null){
+     if (choices !== null) {
         userAnswer = choices.value;
 
-            //Compare the User’s Answer with the Correct Answer
-
-        if(userAnswer === correctAnswer){
+        // Compare the User’s Answer with the Correct Answer
+        if (userAnswer === correctAnswer) {
             feedback.textContent = "Correct! Well done.";
-        }else {
+        } else {
             feedback.textContent = "That's incorrect. Try again!";
         }
-    } else{
+    } else {
         feedback.textContent = 'Please select an answer';
     }
-
-
 }
+
 
 const submit = document.getElementById('submit-answer')
 submit.addEventListener('click', checkAnswer);
